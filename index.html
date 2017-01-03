@@ -36,6 +36,10 @@ img.inline {
     height: 20px;
 }
 
+img.gwr{
+    margin-top:30px;
+}
+
 a.btn{
     background: rgb(255,133,52);
     border: 3px solid rgb(210, 93, 17);
@@ -46,7 +50,7 @@ a.btn{
 }
 
 .btn-main{
-    margin-top:20px;
+    margin-top:50px;
     font-size:200%;
 }
 
@@ -84,11 +88,11 @@ a.btn{
 }
 
 .dark{
-    background: #000;
+    background: #333;
     color:#fff;
     padding: 30px 0;
-    border-top:5px solid rgba(255,133,52,0.9);
-    border-bottom:5px solid rgba(255,133,52,0.9);
+    border-top:5px solid rgb(255,133,52);
+    border-bottom:5px solid rgb(255,133,52);
     margin:30px 0;
 }
 
@@ -105,6 +109,10 @@ a.btn{
 }
 
 footer {
+    margin-top:50px;
+    padding:30px 0;
+    background: #555;
+    border-top:5px solid rgb(255,133,52);
     color:#999;
 }
 
@@ -114,12 +122,12 @@ footer img {
 }
 
 @media(max-width:1200px) {
-    .headline h1 {
-        font-size: 140px;
+    .headline h1, .headline .btn {
+        font-size: 60px;
     }
 
     .headline h2 {
-        font-size: 63px;
+        font-size: 50px;
     }
 
     .featurette-image.pull-left {
@@ -141,35 +149,26 @@ footer img {
     }
 
     .headline h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
-
-    .featurette-image {
-        max-width: 50%;
-    }
-
     .featurette-image.pull-left {
         margin-right: 10px;
     }
-
     .featurette-image.pull-right {
         margin-left: 10px;
     }
-
     .featurette-heading {
         font-size: 30px;
     }
 }
 
 @media(max-width:768px) {
+    img.gwr{
+        max-height:300px;
+    }
     .container {
         margin: 0 15px;
     }
-
-    .featurette-divider {
-        margin: 40px 0;
-    }
-
     .featurette-heading {
         font-size: 25px;
     }
@@ -179,13 +178,8 @@ footer img {
     .headline h1, .headline .btn{
         font-size: 40px;
     }
-
     .headline h2 {
         font-size: 32px;
-    }
-
-    .featurette-divider {
-        margin: 30px 0;
     }
 }
 
@@ -193,30 +187,19 @@ footer img {
     .headline {
         padding: 75px 0 25px 0;
     }
-
     .headline h1 {
         font-size: 60px;
     }
-
     .headline h2 {
         font-size: 30px;
     }
 }
 
 @media(max-width:375px) {
-    .featurette-divider {
-        margin: 10px 0;
-    }
-
-    .featurette-image {
-        max-width: 100%;
-    }
-
     .featurette-image.pull-left {
         margin-right: 0;
         margin-bottom: 10px;
     }
-
     .featurette-image.pull-right {
         margin-bottom: 10px;
         margin-left: 0;
@@ -239,19 +222,25 @@ footer img {
 
     <div class="container">
         <div class="featurette" id="about">
-            <img class="featurette-image img-responsive pull-left hidden-xs" src="img/img-1.jpg">
-            <h2 class="featurette-heading">Be a record-holder
-            </h2>
-            <p class="lead">Become a Guinness World Record holder by joining the Space Hopper Challenge: an attempt to beat the world record for the most people simultaneously bouncing on space hoppers!</p>
-            <h3>Where?</h3>
-            <p><a href="https://www.google.co.uk/maps/place/Shoreditch+Park/@51.533924,-0.0859794,16.81z">Shoreditch Park <i class="glyphicon glyphicon-map-marker"></i></a></p>
-            <h3>When?</h3>
-            <p>23rd April 2017</p>
+            <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <img class="featurette-image img-responsive gwr" src="img/img-1.jpg">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-9">
+                <h2 class="featurette-heading">Be a record-holder
+                </h2>
+                <p class="lead">Become a Guinness World Record holder by joining the Space Hopper Challenge: an attempt to beat the world record for the most people simultaneously bouncing on space hoppers!</p>
+                <h3>Where?</h3>
+                <p><a href="https://www.google.co.uk/maps/place/Shoreditch+Park/@51.533924,-0.0859794,16.81z">Shoreditch Park <i class="glyphicon glyphicon-map-marker"></i></a></p>
+                <h3>When?</h3>
+                <p>23rd April 2017</p>
 
-            <h3>How?</h3>
-            <p>
-            <a class="btn btn-lg" href="https://www.eventbrite.com/e/space-hopper-challenge-guinness-world-record-attempt-tickets-28037267221?aff=Website "><i class="glyphicon glyphicon-star"></i> Buy Tickets <i class="glyphicon glyphicon-star"></i></a>
-            </p>
+                <h3>How?</h3>
+                <p>
+                <a class="btn btn-lg" href="https://www.eventbrite.com/e/space-hopper-challenge-guinness-world-record-attempt-tickets-28037267221?aff=Website "><i class="glyphicon glyphicon-star"></i> Buy Tickets <i class="glyphicon glyphicon-star"></i></a>
+                </p>
+            </div>
+            </div>
             <hr>
             <p>
             <a href="https://twitter.com/intent/tweet?hashtags=spacehopperchallenge"><h3 class="text-center">📣 #spacehopperchallenge 📣</h3></a></p>
@@ -286,48 +275,46 @@ footer img {
             <h3>Who's organising this?</h3>
             <p>The Space Hopper Challenge is being organised by <a href="http://tickthebucket.org/">Tick The Bucket</a> and <a href="http://londonflashmob.co.uk">London Flashmob</a>.</p>
 
-<p>Tick The Bucket is a bucketlist themed social network dedicated to helping people fund, organise and achieve their dreams.</p>
+            <p>Tick The Bucket is a bucketlist themed social network dedicated to helping people fund, organise and achieve their dreams.</p>
 
-<p>London Flashmob is the leading organiser of spontaneous events in the city, and has been featured on ITV, BBC News, the Londonist, Time Out London and London Live. <a href="http://londonflashmob.co.uk">Join the mailing list</a>, <a href="https://www.facebook.com/LondonFlashMob/">like on Facebook</a> or <a href="https://twitter.com/UK_Flashmob">follow on Twitter</a>.</p>
+            <p>London Flashmob is the leading organiser of spontaneous events in the city, and has been featured on ITV, BBC News, the Londonist, Time Out London and London Live. <a href="http://londonflashmob.co.uk">Join the mailing list</a>, <a href="https://www.facebook.com/LondonFlashMob/">like on Facebook</a> or <a href="https://twitter.com/UK_Flashmob">follow on Twitter</a>.</p>
 
-        <h3>When is the event?</h3>
-        <p>Sunday, 23rd April 2017 at 3pm. You will need to arrive at 2pm in order to collect your space hopper.</p>
+            <h3>When is the event?</h3>
+            <p>Sunday, 23rd April 2017 at 3pm. You will need to arrive at 2pm in order to collect your space hopper.</p>
 
-        <h3>Where is it taking place?</h3>
-        <p>In <a href="https://www.google.co.uk/maps/place/Shoreditch+Park/@51.533924,-0.0859794,16.81z">Shoreditch Park, N1 6TA</a>. The nearest stations are <a href="https://www.google.co.uk/maps/place/Old+Street/@51.5260081,-0.0910434,16z"><img src="img/underground.png" class="inline" alt=""> Old Street Tube</a> and <a href="https://www.google.co.uk/maps/place/Hoxton/@51.5307605,-0.079864,16z"><img src="img/overground.png" class="inline" alt=""> Hoxton Overground</a>, both a 10 minute walk away.</p>
+            <h3>Where is it taking place?</h3>
+            <p>In <a href="https://www.google.co.uk/maps/place/Shoreditch+Park/@51.533924,-0.0859794,16.81z">Shoreditch Park, N1 6TA</a>. The nearest stations are <a href="https://www.google.co.uk/maps/place/Old+Street/@51.5260081,-0.0910434,16z"><img src="img/underground.png" class="inline" alt=""> Old Street Tube</a> and <a href="https://www.google.co.uk/maps/place/Hoxton/@51.5307605,-0.079864,16z"><img src="img/overground.png" class="inline" alt=""> Hoxton Overground</a>, both a 10 minute walk away.</p>
 
-        <h3>What is the current world record?</h3>
-        <p>Currently the world record for the most people simultaneously bouncing in one place on a space hopper stands at 2,943. We don't plan to beat that record, we plan to SMASH it! </p>
+            <h3>What is the current world record?</h3>
+            <p>Currently the world record for the most people simultaneously bouncing in one place on a space hopper stands at 2,943. We don't plan to beat that record, we plan to SMASH it! </p>
 
-        <h3>How much does it cost to take part?</h3>
-        <p>Tickets are £10 and are <a href="https://www.eventbrite.com/e/space-hopper-challenge-guinness-world-record-attempt-tickets-28037267221?aff=Website">available from Eventbrite</a>. This includes your place at the event, getting you at least one world record, and a space hopper.</p>
+            <h3>How much does it cost to take part?</h3>
+            <p>Tickets are £10 and are <a href="https://www.eventbrite.com/e/space-hopper-challenge-guinness-world-record-attempt-tickets-28037267221?aff=Website">available from Eventbrite</a>. This includes your place at the event, getting you at least one world record, and a space hopper.</p>
 
-        <h3>Do I need to buy a space hopper? </h3>
-        <p>No, your ticket includes a free space hopper, which you’ll receive on the day.</p> 
+            <h3>Do I need to buy a space hopper? </h3>
+            <p>No, your ticket includes a free space hopper, which you’ll receive on the day.</p> 
 
-        <h3>Will the event be photographed and videoed?</h3>
-        <p>Yes - you will have some great footage to prove that you are a Guinness World Record holder! Here is a video from one of the last times this event was attempted:</p>
+            <h3>Will the event be photographed and videoed?</h3>
+            <p>Yes - you will have some great footage to prove that you are a Guinness World Record holder! Here is a video from one of the last times this event was attempted:</p>
 
-        <div class="text-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/myV5sDHxm74" frameborder="0" allowfullscreen></iframe>
-        <div>
-        <a class="btn btn-lg btn-main" href="https://www.eventbrite.com/e/space-hopper-challenge-guinness-world-record-attempt-tickets-28037267221?aff=Website "><i class="glyphicon glyphicon-star"></i> Buy Tickets <i class="glyphicon glyphicon-star"></i></a></div>
-        </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <img src="img/ttb-logo.jpg" alt="Tick the Bucket">
-                    <img src="img/lfm-logo.png" alt="London Flashmob">
-                    <p>Copyright &copy; London Flashmob 2017</p>
-                </div>
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/myV5sDHxm74" frameborder="0" allowfullscreen></iframe>
             </div>
-        </footer>
+
+            <div class="text-center">
+            <a class="btn btn-lg btn-main" href="https://www.eventbrite.com/e/space-hopper-challenge-guinness-world-record-attempt-tickets-28037267221?aff=Website "><i class="glyphicon glyphicon-star"></i> Buy Tickets <i class="glyphicon glyphicon-star"></i></a>
+            </div>
+        </div>
 
     </div>
+
+    <footer>
+        <div class="text-center">
+            <img src="img/ttb-logo.jpg" alt="Tick the Bucket" class="img-circle">
+            <img src="img/lfm-logo.png" alt="London Flashmob">
+            <p>Copyright &copy; London Flashmob 2017</p>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
