@@ -140,19 +140,6 @@ footer img {
     height: 100px;
     margin:10px;
 }
-.videowrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-.videowrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 .testimonials{
     margin-top: 30px;
     padding: 0;
@@ -171,6 +158,12 @@ footer img {
 }
 .testimonials li:nth-child(odd){
     margin-right: 30px;
+}
+
+.partner-logo{
+    height: 70px;
+    display: block;
+    margin: 10px auto;
 }
 
 .divider{
@@ -291,38 +284,48 @@ footer img {
 
 <div class="dark" style="margin-top:0;">
 <div class="container">
-<div class="videowrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dS725JSHBp4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-
-    <div class="container">
-        <div class="featurette" id="about">
-            <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <img class="featurette-image img-responsive gwr" src="img/img-1.jpg">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-9">
-                <h2 class="featurette-heading">Be a record-holder
-                </h2>
-                <p class="lead">Come and break the world record for the most people on space hoppers (and two other surprise world records too)! AND get yourself a free space hopper!</p>
-                <h3>Where?</h3>
-                <p><a href="https://www.google.co.uk/maps/place/King's+House+Sports+Grounds/@51.477661,-0.2580397,17z">King's House Sports Ground <i class="glyphicon glyphicon-map-marker"></i></a></p>
-                <h3>When?</h3>
-                <p>29th May 2017</p>
-
-                <h3>How?</h3>
-                <p>
-                <a class="btn btn-lg" href="http://www.funzing.com/sd/6Ccx3o"><i class="glyphicon glyphicon-star"></i> Buy Tickets <i class="glyphicon glyphicon-star"></i></a>
-                </p>
-            </div>
-            </div>
-            <hr>
-            <p>
-            <a href="https://twitter.com/intent/tweet?hashtags=spacehopperchallenge"><h3 class="text-center">📣 #spacehopperchallenge 📣</h3></a></p>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dS725JSHBp4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <h3 style="text-align:center;color:#777">Our Partners</h3>
+    <div class="row">
+        <div class="col-xs-6">
+            <a href="http://www.funzing.com/sd/6Ccx3o">
+                <img src="img/funzing-logo.png" class="partner-logo" alt="Funzing">
+            </a>
         </div>
+        <div class="col-xs-6">
+            <img src="img/fever-logo.png" class="partner-logo" alt="Fever">
+        </div>
+    </div>
+</div>
+</div>
 
+<div class="container">
+    <div class="featurette" id="about">
+        <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <img class="featurette-image img-responsive gwr" src="img/img-1.jpg">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-9">
+            <h2 class="featurette-heading">Be a record-holder
+            </h2>
+            <p class="lead">Come and break the world record for the most people on space hoppers (and two other surprise world records too)! AND get yourself a free space hopper!</p>
+            <h3>Where?</h3>
+            <p><a href="https://www.google.co.uk/maps/place/King's+House+Sports+Grounds/@51.477661,-0.2580397,17z">King's House Sports Ground <i class="glyphicon glyphicon-map-marker"></i></a></p>
+            <h3>When?</h3>
+            <p>29th May 2017</p>
+
+            <h3>How?</h3>
+            <p>
+            <a class="btn btn-lg" href="http://www.funzing.com/sd/6Ccx3o"><i class="glyphicon glyphicon-star"></i> Buy Tickets <i class="glyphicon glyphicon-star"></i></a>
+            </p>
+        </div>
+        </div>
+        <hr>
+        <p>
+        <a href="https://twitter.com/intent/tweet?hashtags=spacehopperchallenge"><h3 class="text-center">📣 #spacehopperchallenge 📣</h3></a></p>
+    </div>
 </div>
 
 <div class="dark">
@@ -368,9 +371,7 @@ footer img {
             <p>No, your ticket includes a free space hopper, which you’ll receive on the day.</p>
 
             <h3>Can I join the team?</h3>
-            <p>We are looking for volunteers to help out with organising the event, including marketing, PR and fundraising, and the biggie: managing the event on the day.</p>
-
-            <p>Email hannah@londonflashmob.co.uk to find out more!</p>
+            <p>We are looking for volunteers to help out with organising the event, including marketing, PR and fundraising, and the biggie: managing the event on the day. Email hannah@londonflashmob.co.uk to find out more!</p>
 
             <h3>Will the event be photographed and videoed?</h3>
             <p>Yes - you will have some great footage to prove that you are a world record holder! Here is a video from one of the last times this event was attempted:</p>
@@ -391,7 +392,7 @@ footer img {
             <a href="http://tickthebucket.org"><img src="img/ttb-logo.jpg" alt="Tick the Bucket" class="img-circle"></a>
             <a href="http://londonflashmob.co.uk"><img src="img/lfm-logo.png" alt="London Flashmob"></a>
             <p>
-            Official partners: <a href="http://www.funzing.com/sd/6Ccx3o">Funzing</a>, <a href="http://fvr.to/p/453451/">Fever</a>
+            Official partners: <a href="http://www.funzing.com/sd/6Ccx3o">Funzing</a>, <a href="#">Fever</a>
             As seen on: <a href="https://www.timeout.com/london/blog/join-a-massive-space-hopper-flashmob-and-break-a-world-record-031317">Time Out London</a>, <a href="http://secretldn.com/2017/03/hip-hop-hooray-space-hop-thousands-londoners-bank-holiday/">Secret London</a>, <a href="http://londontheinside.com/2017/03/14/join-a-space-hopper-flash-mob/">Inside London</a>
             </p>
             <p>Copyright &copy; London Flashmob 2017</p>
