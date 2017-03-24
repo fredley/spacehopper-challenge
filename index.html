@@ -70,6 +70,20 @@ a.btn{
     background-size: cover;
 }
 
+.banner{
+    background: #000;
+    color: rgb(255,133,52);
+    position: absolute;
+    left: 10%;
+    top: 110px;
+    -ms-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
+
 .headline {
     padding: 120px 0;
 }
@@ -125,6 +139,44 @@ footer {
 footer img {
     height: 100px;
     margin:10px;
+}
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.testimonials{
+    margin-top: 30px;
+    padding: 0;
+}
+.testimonials li{
+    list-style: none;
+    background: #eee;
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin-bottom: 15px;
+    color:#000;
+}
+
+.testimonials li:nth-child(even){
+    margin-left: 30px;
+}
+.testimonials li:nth-child(odd){
+    margin-right: 30px;
+}
+
+.divider{
+    width:100%;
+    border-bottom:5px solid rgb(255,133,52);
+    margin:30px 0;
 }
 
 @media(max-width:1200px) {
@@ -190,6 +242,10 @@ footer img {
 }
 
 @media(max-width:640px) {
+    .banner{
+        left: 15%;
+        top: 60px;
+    }
     .headline {
         padding: 75px 0 25px 0;
     }
@@ -200,7 +256,13 @@ footer img {
         font-size: 30px;
     }
 }
-
+@media(max-width:480px) {
+    .banner{
+        font-size: 15px;
+        left: 10%;
+        top: 50px;
+    }
+}
 @media(max-width:375px) {
     .featurette-image.pull-left {
         margin-right: 0;
@@ -219,12 +281,21 @@ footer img {
 
     <header class="header-image">
         <div class="headline">
+            <div class="banner">TickTheBucket and London Flashmob present...</div>
             <h1>Space Hopper Challenge</h1>
             <h2>Break a world record</h2>
 
             <a class="btn btn-lg" href="http://www.funzing.com/sd/6Ccx3o"><i class="glyphicon glyphicon-star"></i> Buy Tickets <i class="glyphicon glyphicon-star"></i></a>
         </div>
     </header>
+
+<div class="dark" style="margin-top:0;">
+<div class="container">
+<div class="videowrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dS725JSHBp4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
 
     <div class="container">
         <div class="featurette" id="about">
@@ -235,7 +306,7 @@ footer img {
             <div class="col-xs-12 col-sm-6 col-md-9">
                 <h2 class="featurette-heading">Be a record-holder
                 </h2>
-                <p class="lead">Become a world record holder by joining the Space Hopper Challenge: an attempt to beat the world record for the most people simultaneously bouncing on space hoppers!</p>
+                <p class="lead">Come and break the world record for the most people on space hoppers (and two other surprise world records too)! AND get yourself a free space hopper!</p>
                 <h3>Where?</h3>
                 <p><a href="https://www.google.co.uk/maps/place/King's+House+Sports+Grounds/@51.477661,-0.2580397,17z">King's House Sports Ground <i class="glyphicon glyphicon-map-marker"></i></a></p>
                 <h3>When?</h3>
@@ -253,25 +324,16 @@ footer img {
         </div>
 
 </div>
+
 <div class="dark">
 <div class="container">
-        <div class="featurette" id="volunteer">
-            <img class="featurette-image img-circle img-responsive pull-right" src="img/img-2.jpg">
-            <h2 class="featurette-heading">Join the Team
-            </h2>
-            <p class="lead">We are looking for volunteers to help out with organising the event, including marketing, PR and fundraising, and the biggie: managing the event on the day.</p>
-
-            <p>You'll get:</p>
-            <ul>
-                <li>A free ticket to the event</li>
-                <li>A chance to work on an exciting and innovative project</li>
-                <li>Interesting work experience across many different areas, including managing an event of 3,000+ people</li>
-            </ul>
-
-            <p>Email hannah@londonflashmob.co.uk to find out more</p>
-
-            <p>A massive <strong>THANK YOU</strong> in advance - we can’t run this event without your help!</p>
-        </div>
+    <h2>Praise for Previous Events</h2>
+    <ul class="testimonials">
+        <li>"The funnest thing I've done in London!" - <em>Karen Kirkpatrick</em></li>
+        <li>"Now I know what's been missing in my life! Absolutely bloody AMAZING!" - <em>JJ Szilagyi</em></li>
+        <li>"Absolutely brilliant. Had ridiculous fun and what a great atmosphere. Can't wait for more events!" - <em>Beth Strudel</em></li>
+        <li>"Jolly good show! Most fun I've had in a while!" - <em>James Bird</em></li>
+    </ul>
 </div>
 </div>
 <div class="container">
@@ -289,7 +351,12 @@ footer img {
             <p>Bank Holiday Monday, 29th May 2017 at 2.30pm. Doors open at 12pm so come armed with a picnic and some friends and make a day of it! You will need to arrive by 2pm at the latest in order to pick up your space hopper.</p>
 
             <h3>Where is it taking place?</h3>
-            <p>At <a href="https://www.google.co.uk/maps/place/King's+House+Sports+Grounds/@51.477661,-0.2580397,17z">King's House Sports Ground, near Barnes Bridge</a>, a beautiful spot along the Thames between <a href="https://www.google.co.uk/maps/place/Barnes+Bridge/@51.4720133,-0.254804,17z">Barnes Bridge</a> and <a href="https://www.google.co.uk/maps/place/Chiswick/@51.4785038,-0.2651652,15.56z">Chiswick</a> stations - a 20 minute ride from Waterloo.</p>
+            <p><a href="https://www.google.co.uk/maps/place/King's+House+Sports+Grounds/@51.477661,-0.2580397,17z">King's House Sports Ground</a><br>
+            Riverside Drive<br>
+            Chiswick<br>
+            London<br>
+            W4 2SH</p>
+            <p>King's House Sports Ground is a beautiful spot along the Thames between <a href="https://www.google.co.uk/maps/place/Barnes+Bridge/@51.4720133,-0.254804,17z">Barnes Bridge</a> and <a href="https://www.google.co.uk/maps/place/Chiswick/@51.4785038,-0.2651652,15.56z">Chiswick</a> stations - a 20 minute ride from Waterloo.</p>
 
             <h3>What is the current world record?</h3>
             <p>Currently the world record for the most people simultaneously bouncing in one place on a space hopper stands at 2,943. We don't plan to beat that record, we plan to SMASH it! </p>
@@ -299,6 +366,11 @@ footer img {
 
             <h3>Do I need to buy a space hopper? </h3>
             <p>No, your ticket includes a free space hopper, which you’ll receive on the day.</p>
+
+            <h3>Can I join the team?</h3>
+            <p>We are looking for volunteers to help out with organising the event, including marketing, PR and fundraising, and the biggie: managing the event on the day.</p>
+
+            <p>Email hannah@londonflashmob.co.uk to find out more!</p>
 
             <h3>Will the event be photographed and videoed?</h3>
             <p>Yes - you will have some great footage to prove that you are a world record holder! Here is a video from one of the last times this event was attempted:</p>
@@ -318,6 +390,10 @@ footer img {
         <div class="text-center">
             <a href="http://tickthebucket.org"><img src="img/ttb-logo.jpg" alt="Tick the Bucket" class="img-circle"></a>
             <a href="http://londonflashmob.co.uk"><img src="img/lfm-logo.png" alt="London Flashmob"></a>
+            <p>
+            Official partners: <a href="http://www.funzing.com/sd/6Ccx3o">Funzing</a>, <a href="http://fvr.to/p/453451/">Fever</a>
+            As seen on: <a href="https://www.timeout.com/london/blog/join-a-massive-space-hopper-flashmob-and-break-a-world-record-031317">Time Out London</a>, <a href="http://secretldn.com/2017/03/hip-hop-hooray-space-hop-thousands-londoners-bank-holiday/">Secret London</a>, <a href="http://londontheinside.com/2017/03/14/join-a-space-hopper-flash-mob/">Inside London</a>
+            </p>
             <p>Copyright &copy; London Flashmob 2017</p>
         </div>
     </footer>
